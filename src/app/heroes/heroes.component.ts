@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HEROES } from '../mock-heroes';
+import { HeroService } from '../hero.service';
 import { Hero } from '../hero';
+import { MessageService } from '../message.service';
+
 
 @Component({
   selector: 'app-heroes',
@@ -9,17 +11,17 @@ import { Hero } from '../hero';
 })
 //exporto class para poder importarlo en otros lados...
 export class HeroesComponent implements OnInit {
-  heroes = HEROES;
 
+  heroes: Hero[] = [];
 
-  selectedHero: Hero;
+  constructor(private heroService: HeroService) { }
 
+  ngOnInit(): void { this.getHeroes(); }
 
-  constructor() { }
-
-  ngOnInit(): void { }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
+  getHeroes(): void {
+    //The subscribe() method passes the emitted array to the callback, which sets the component's heroes property.
+    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
   }
+
+
 }
