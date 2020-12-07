@@ -1,27 +1,17 @@
-# PrimerPaso
+# superHeroList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+###### This Tour of Heroes porject shows  how to set up your local development environment and develop an app using the Angular CLI tool, and provides an introduction to the fundamentals of Angular. :muscle:
 
-## Development server
+**The Tour of Heroes app that i build helps a staffing agency manage its stable of heroes. The app has many of the features i'd expect to find in any data-driven application. The finished app acquires and displays a list of heroes, edits a selected hero's detail, and navigates among different views of heroic data.**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+__By the end of this tutorial i will be able to do the following:__ 
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Use built-in Angular directives to show and hide elements and display lists of hero data. 
+- Create Angular components to display hero details and show an array of heroes.
+- Use one-way :no_entry: data binding for read-only data. 
+- Add editable fields to update a model with two-way :left_right_arrow: data binding.
+- Bind component methods to user events, like keystrokes and clicks.
+- Enable users to select a hero from a master list :memo: and edit that hero in the details view.
+- Format data with pipes
+- Create a shared service to assemble the heroes.
+- Use routing to navigate among different views and their components.
